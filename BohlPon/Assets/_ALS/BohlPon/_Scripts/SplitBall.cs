@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SplitBall : MonoBehaviour
+namespace ALS.BohlPon
 {
-	[SerializeField] bool _hasTriggered = false;
-
-	private void OnCollisionEnter(Collision collision)
+	public class SplitBall : MonoBehaviour
 	{
-		if (_hasTriggered) return;
-		GameObject ball = this.gameObject;
-		Instantiate(ball);
-		_hasTriggered = true;
+		[SerializeField] GameObject _prefab;
+		[SerializeField] bool _hasTriggered = false;
+
+		private void OnCollisionEnter(Collision collision)
+		{
+			if (_hasTriggered) return;
+			Instantiate(_prefab, transform.position, transform.rotation);
+			_hasTriggered = true;
+		}
 	}
 }
+
