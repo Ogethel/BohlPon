@@ -7,13 +7,15 @@ namespace ALS.BohlPon
 	public class SplitBall : MonoBehaviour
 	{
 		[SerializeField] GameObject _prefab;
-		[SerializeField] bool _hasTriggered = false;
+		public bool HasTriggered = false;
 
 		private void OnCollisionEnter(Collision collision)
 		{
-			if (_hasTriggered) return;
-			Instantiate(_prefab, transform.position, transform.rotation);
-			_hasTriggered = true;
+			if (HasTriggered) return;
+			GameObject go = Instantiate(_prefab, transform.position, transform.rotation);
+			SplitBall splitScript = go.GetComponent<SplitBall>();
+			if (splitScript) splitScript.HasTriggered = true;
+			HasTriggered = true;
 		}
 	}
 }
