@@ -1165,7 +1165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: 1488676113}
-  _hasTriggered: 0
+  _data: {fileID: 0}
+  HasTriggered: 0
 --- !u!1 &1519490566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1198,53 @@ Transform:
   m_Children:
   - {fileID: 1234467236}
   m_Father: {fileID: 1772391683}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1543390641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1543390643}
+  - component: {fileID: 1543390642}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1543390642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543390641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f483b47adfea3b4cb7064eb795433a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _source: {fileID: 0}
+  _target: {fileID: 0}
+  _playerData: {fileID: 11400000, guid: f4811084baac61c47b151185e89aff37, type: 2}
+--- !u!4 &1543390643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543390641}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.902315, y: 28.931156, z: 19.47893}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1772391680
 GameObject:
@@ -1307,8 +1355,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b0ed28f1d3cec44bb9f3c75c228f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
-  _hasTriggered: 0
+  _prefab: {fileID: 1772391680}
+  _data: {fileID: 11400000, guid: f4811084baac61c47b151185e89aff37, type: 2}
+  HasTriggered: 0
 --- !u!1 &2002186148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,3 +1505,4 @@ SceneRoots:
   - {fileID: 1488676118}
   - {fileID: 1772391683}
   - {fileID: 1319388079}
+  - {fileID: 1543390643}

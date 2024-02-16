@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class Aiming : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private GameObject _source;
+	[SerializeField] private GameObject _target;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	[SerializeField] private PlayerData _playerData;
+
+	private bool _playerIsAiming = false;
+
+	private void OnEnable()
+	{
+		_playerData.OnPlayerStateChanged += RecivePlayerState; //subscribe
+	}
+	private void OnDisable()
+	{
+		_playerData.OnPlayerStateChanged -= RecivePlayerState; //unsubscribe
+	}
+
+	void RecivePlayerState(PlayerState state)
+	{
+		if(state == PlayerState.AIMING)
+		{
+			_playerIsAiming = true;
+		}
+		else
+		{
+			_playerIsAiming = false;
+		}
+	}
 }

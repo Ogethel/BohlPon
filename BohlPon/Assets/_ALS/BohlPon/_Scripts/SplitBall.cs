@@ -6,7 +6,8 @@ namespace ALS.BohlPon
 {
 	public class SplitBall : MonoBehaviour
 	{
-		[SerializeField] GameObject _prefab;
+		[SerializeField] private GameObject _prefab;
+		[SerializeField] private PlayerData _data;
 		public bool HasTriggered = false;
 
 		private void OnCollisionEnter(Collision collision)
