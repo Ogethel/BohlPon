@@ -14,6 +14,7 @@ public class Aiming : MonoBehaviour
 	private void OnEnable()
 	{
 		_playerData.OnPlayerStateChanged += RecivePlayerState; //subscribe
+		RecivePlayerState(_playerData.PlayerState);
 	}
 	private void OnDisable()
 	{
