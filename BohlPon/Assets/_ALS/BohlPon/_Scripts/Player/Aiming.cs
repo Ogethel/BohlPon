@@ -62,10 +62,9 @@ public class Aiming : MonoBehaviour
 			if(direction != Vector3.zero)
 			{
 				Quaternion lookRot = Quaternion.LookRotation(direction);
+				//This is an interesting bit of code that we'll want to look at together Pax
 				float offset = lookRot.eulerAngles.y > 100 ? 90+(90-lookRot.eulerAngles.x) : lookRot.eulerAngles.x;
-				Debug.Log($"Look rot x: {lookRot.eulerAngles.x}");
-				_source.transform.rotation = Quaternion.Euler(offset, /*lookRot.eulerAngles.x*/90f, 0f);
-				//_source.transform.rotation = lookRot;
+				_source.transform.rotation = Quaternion.Euler(offset, 90f, 0f);
 			}
 		}
 	}
