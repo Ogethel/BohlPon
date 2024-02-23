@@ -82,7 +82,8 @@ MonoBehaviour:
   _target: {fileID: 2726509232237165752}
   _raycastLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  _launcher: {fileID: 8093926233617062433}
   _playerData: {fileID: 11400000, guid: f4811084baac61c47b151185e89aff37, type: 2}
 --- !u!1 &2726509232237165752
 GameObject:
@@ -124,6 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4273251813043125876}
+  - component: {fileID: 8093926233617062433}
   m_Layer: 0
   m_Name: Source
   m_TagString: Untagged
@@ -147,6 +149,21 @@ Transform:
   - {fileID: 7379519655253306108}
   m_Father: {fileID: 7182761795154475071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8093926233617062433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7745560870734029762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3badba4274eb1419c3c634a3abcf72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _projectile: {fileID: 7369247989586641908, guid: 125462efaa1a2e547b8344d06044a08f,
+    type: 3}
+  _force: 2500
 --- !u!1 &7781726057258551386
 GameObject:
   m_ObjectHideFlags: 0
