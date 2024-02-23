@@ -14,7 +14,9 @@ namespace ALS.BohlPon
 		{
 			if (HasTriggered) return;
 			GameObject go = Instantiate(_prefab, transform.position, transform.rotation);
+			Rigidbody rb = go.GetComponent<Rigidbody>();
 			SplitBall splitScript = go.GetComponent<SplitBall>();
+			if (rb) rb.AddForce(this.GetComponent<Rigidbody>().velocity, ForceMode.Impulse);
 			if (splitScript) splitScript.HasTriggered = true;
 			HasTriggered = true;
 		}
