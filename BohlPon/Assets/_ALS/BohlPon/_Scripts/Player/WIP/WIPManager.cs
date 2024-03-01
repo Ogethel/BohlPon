@@ -22,7 +22,7 @@ namespace ALS.BohlPon
 		{
 			if (state != PlayerState.AIMING)
 			{
-				StartCoroutine(ResetPlayerState(1.2f));
+				StartCoroutine(ResetPlayerState(.4f));
 			}
 		}
 

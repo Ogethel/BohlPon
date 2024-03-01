@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ALS.BohlPon
 {
-    public class ProjectileLauncher : MonoBehaviour
+	public class ProjectileLauncher : MonoBehaviour
     {
         [SerializeField] private GameObject _projectile;
         [SerializeField] private float _force;
