@@ -165,7 +165,53 @@ MonoBehaviour:
     ShowInfluenceToggle: 0
     ShowSpreadOnBars: 0
     SpreadPercentageDigits: 2
-  DrawerSettings: []
+  DrawerSettings:
+  - DrawerID: 69bfecee-49af-48b9-bb96-872c989d93f0
+    Created: 638500258394460180
+    Modified: 638500258394460180
+    DrawerOptionSection: 0
+    PalettePath: Default
+    DimColors: 1
+    Monochrome: 0
+    MonochromeColor: {r: 1, g: 0.78, b: 0.4, a: 1}
+    ShowIndex: 0
+    ShowInfo: 1
+    ShowPercentage: 1
+    StripeHeight: 2
+    StripePercentageDigits: 0
+    ItemPercentageDigits: 2
+    TestPercentageDigits: 2
+    ColorizePreviewBars: 1
+    NormalizePreviewBars: 0
+    TestColorizeSensitivity: 3
+    SpreadColorizeSensitivity: 2
+    ElementInfoSpace: 0.5
+    ShowInfluenceToggle: 0
+    ShowSpreadOnBars: 0
+    SpreadPercentageDigits: 2
+  - DrawerID: 4fc90f56-5c5d-45c2-af72-c7b2911a541f
+    Created: 638500258395090279
+    Modified: 638500264117675969
+    DrawerOptionSection: 4
+    PalettePath: Default
+    DimColors: 1
+    Monochrome: 0
+    MonochromeColor: {r: 1, g: 0.78, b: 0.4, a: 1}
+    ShowIndex: 0
+    ShowInfo: 1
+    ShowPercentage: 1
+    StripeHeight: 2
+    StripePercentageDigits: 0
+    ItemPercentageDigits: 2
+    TestPercentageDigits: 2
+    ColorizePreviewBars: 1
+    NormalizePreviewBars: 1
+    TestColorizeSensitivity: 3
+    SpreadColorizeSensitivity: 2
+    ElementInfoSpace: 0.5
+    ShowInfluenceToggle: 0
+    ShowSpreadOnBars: 0
+    SpreadPercentageDigits: 2
   colorPalettes:
   - palettePath: Default
     colors:
