@@ -306,14 +306,14 @@ MonoBehaviour:
     m_PLID: 4fc90f56-5c5d-45c2-af72-c7b2911a541f
     m_ProbabilityItems:
     - m_Value: James
-      m_BaseProbability: 0.19028777
+      m_BaseProbability: 0.15787286
       m_Enabled: 1
       m_Locked: 0
       m_InfluenceSpread: {x: 0, y: 1}
       m_InfluenceProvider: {fileID: 0}
       m_InvertInfluence: 0
     - m_Value: Bob
-      m_BaseProbability: 0.098561145
+      m_BaseProbability: 0.13097607
       m_Enabled: 1
       m_Locked: 0
       m_InfluenceSpread: {x: 0, y: 1}
@@ -361,21 +361,21 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 1
         value: 1
-        inSlope: 0
-        outSlope: 0
+        inSlope: 1.145881
+        outSlope: 1.145881
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
+        inWeight: 0.17083335
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    m_Seed: 1341291212
+    m_Seed: 1943194793
     m_KeepSeed: 0
     m_PickHistory:
       m_History: []
       m_Capacity: 1000
-    m_LastPickCount: 6
+    m_LastPickCount: 16
     m_SelectionMethodID: LSMRegular
 --- !u!4 &542329999
 Transform:
